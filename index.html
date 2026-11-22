@@ -35,8 +35,8 @@ button:disabled { opacity:.6; }
   <div class="err" id="err"></div>
 </form>
 <script>
-const SALT = "gJPK7/bf7sKcMAFrAXAqPQ==", IV = "ibM5iEXqTKH2cDAy", ITER = 310000, VER = "06e162c7e2";
-const CDN = "https://cdn.jsdelivr.net/gh/ww8chw/group-post-plan@8b3ec5662749592cb29b2b1c7eab9e302458c817/site.enc";
+const SALT = "q7zLheubsGiYTbgV7bUUTA==", IV = "ysJLTauDr3pcMiRL", ITER = 310000, VER = "57cef77981";
+const CDN = "https://cdn.jsdelivr.net/gh/ww8chw/group-post-plan@a41451143ecd428b4d2aa34b7c2ab24a4a267966/site.enc";
 const ub = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 // 先走 jsDelivr（GitHub Pages 在台灣常只有幾十 KB/s），失敗再退回同站檔案
 const get = u => fetch(u).then(r => { if (!r.ok) throw new Error("下載失敗 " + r.status); return r.arrayBuffer(); });
